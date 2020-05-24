@@ -1,5 +1,7 @@
 # kubespray-aws-terrafom-centos-ami
 
+start from https://github.com/morgulnet/kubespray-aws-terrafom-centos-ami/tree/master/contrib/terraform/aws
+
 1. Create Key-pair in aws  (in my case morgul)
 
 2. cd contrib/terraform/aws
