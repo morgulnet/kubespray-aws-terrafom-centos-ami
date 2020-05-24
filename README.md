@@ -4,6 +4,10 @@ start from https://github.com/morgulnet/kubespray-aws-terrafom-centos-ami/tree/m
 
 1. Create Key-pair in aws  (in my case morgul)
 
+https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#KeyPairs:
+
+location - credentials.tfvars/AWS_SSH_KEY_NAME = "morgul"
+
 2. cd contrib/terraform/aws
 
 3. terraform init
