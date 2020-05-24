@@ -1,0 +1,17 @@
+---
+- name: Copy file and delete kubelete.
+  hosts: kube-master,kube-node,etcd
+  become: true
+  gather_facts: False
+
+  tasks:
+     - name: Copy daemon json.
+       become: true
+       copy:
+         src: files/daemon.json
+         dest: /etc/docker/daemon.json
+
+     - name: remove the Kubelet package
+       yum:
+         name: kubelet
+         state: absent
