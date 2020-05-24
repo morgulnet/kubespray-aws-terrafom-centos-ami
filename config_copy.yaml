@@ -1,0 +1,9 @@
+---
+- hosts: kube-master
+  gather_facts: no
+ 
+  tasks:
+  - name: ansible copy file from remote to local.
+    fetch:
+     src: /root/.kube/config
+     dest: /Users/mo/.kube/config_load

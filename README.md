@@ -6,7 +6,15 @@ start from https://github.com/morgulnet/kubespray-aws-terrafom-centos-ami/tree/m
 
 https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#KeyPairs:
 
+chmod 600 morgul.pem
+
 location - credentials.tfvars/AWS_SSH_KEY_NAME = "morgul"
+
+eval $(ssh-agent)
+
+ssh-add -D
+
+ssh-add ~/morgul.pem
 
 2. cd contrib/terraform/aws
 
