@@ -1,0 +1,1 @@
+# kubespray-aws-terrafom-centos-ami
